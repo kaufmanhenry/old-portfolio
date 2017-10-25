@@ -1,0 +1,85 @@
+:root {
+  --gray: #AAB4BC;
+  --black: #374047;
+  --blue: #0088FF;
+  --light-gray: #DDE1E4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
+}
+
+.container {
+  width: 90%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+nav a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+nav a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+section p {
+  color: var(--black);
+  padding-top: 1.5rem;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+}
+
+section p a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+section p a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 2rem 0;
+  border-top: solid 1px var(--light-gray);
+  font-size: .875rem;
+  color: var(--gray);
+}
