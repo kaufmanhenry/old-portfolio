@@ -3,5 +3,6 @@ export const fontFamily = '-apple-system,BlinkMacSystemFont,avenir next,avenir,h
 export const colors = {
   black: '#111',
   darkGray: '#555',
-  gray: '#aaa'
+  gray: '#aaa',
+  blue: '#28f'
 };
