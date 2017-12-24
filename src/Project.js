@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Flex, Box } from 'grid-styled';
 
 import { colors } from './Variables';
 
@@ -29,13 +30,19 @@ const StyledProject = styled.div`
   }
 `;
 
-const Project = ({ name, photo, link, description }) => (
+const Project = ({ name, photo, link, description, reverse }) => (
   <StyledProject>
-    <img src={photo} />
-    <h3>
-      <a href={link} target="_blank">{name}</a>
-    </h3>
-    <p>{description}</p>
+    <Flex align="center" mx={-2} wrap direction={reverse ? 'row-reverse' : 'row'}>
+      <Box w={[1, 2/3]} px={2}>
+        <img src={photo} />
+      </Box>
+      <Box w={[1, 1/3]} px={2}>
+        <h3>
+          <a href={link} target="_blank">{name}</a>
+        </h3>
+        <p>{description}</p>
+      </Box>
+    </Flex>
   </StyledProject>
 );
 

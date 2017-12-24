@@ -6,6 +6,7 @@ import { colors } from './Variables';
 
 import Navigation from './Navigation';
 import Project from './Project';
+import Footer from './Footer';
 
 const StyledApp = styled.div`
   margin: 0 auto;
@@ -31,31 +32,24 @@ export default function() {
     <StyledApp>
       <Navigation />
       <h1>Product <span>designer</span> and full stack <span>developer</span> from Denver.</h1>
-      <Flex wrap m={-2}>
-        <Box width={[1, 1/3]} p={2}>
-          <Project
-            // photo="images/blink.png"
-            name="Blink Lending"
-            link="http://blinklending.ca"
-            description="A 21st century online mortgage experience for Canadian citizens."
-          />
-        </Box>
-        <Box width={[1, 1/3]} p={2}>
-          <Project
-            name="nexleader IPSAT"
-            link="http://myipsat.com"
-            description="Helping people understand their leadership potentials."
-          />
-        </Box>
-        <Box width={[1, 1/3]} p={2}>
-          <Project
-            name="Sponta"
-            link="http://sponta.co"
-            description="Sponta is a push notifications app that simplifies outreach."
-          />
-        </Box>
-      </Flex>
-      
+      <Box py={4}>
+        <Project
+          photo="images/blink.png"
+          name="Blink Lending"
+          link="http://blinklending.ca"
+          description="A 21st century online mortgage experience for Canadian citizens."
+        />
+      </Box>
+      <Box py={4}>
+        <Project
+          photo="images/blink.png"
+          name="nexleader IPSAT"
+          link="http://myipsat.com"
+          description="Helping people understand their leadership potentials."
+          reverse
+        />
+      </Box>
+      <Footer />
     </StyledApp>
   );
 }
