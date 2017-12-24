@@ -34,7 +34,7 @@ export default function() {
       <h1>Product <span>designer</span> and full stack <span>developer</span> from Denver.</h1>
       <Box py={4}>
         <Project
-          photo="images/blink.png"
+          photo="images/blink-main.svg"
           name="Blink Lending"
           link="http://blinklending.ca"
           description="A 21st century online mortgage experience for Canadian citizens."
@@ -42,7 +42,7 @@ export default function() {
       </Box>
       <Box py={4}>
         <Project
-          photo="images/blink.png"
+          photo="images/nexleader-main.svg"
           name="nexleader IPSAT"
           link="http://myipsat.com"
           description="Helping people understand their leadership potentials."

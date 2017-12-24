@@ -8,7 +8,7 @@ const StyledProject = styled.div`
   img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 1px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
   }
   h3 {
     color: ${colors.black};
