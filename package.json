@@ -8,11 +8,18 @@
   "dependencies": {
     "grid-styled": "2.0.0-11",
     "react": "16.2.0",
+    "react-router-dom": "4.2.2",
     "styled-components": "2.3.3"
   },
   "scripts": {
     "start": "x0 dev src/App.js",
     "build": "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components' && echo 'kaufman.io' >> dist/CNAME",
     "deploy": "gh-pages -d dist"
+  },
+  "x0": {
+    "routes": [
+      "/",
+      "/about"
+    ]
   }
 }
