@@ -8,9 +8,9 @@ import {
 
 import Head from './Head';
 import NoMatch from './NoMatch';
-import Home from './Home/Home';
-import Blink from './Blink/Blink';
-import Ipsat from './IPSAT/IPSAT';
+import Home from './pages/Home';
+import Blink from './pages/Blink';
+import Ipsat from './pages/IPSAT';
 
 // universal router component
 const Router = typeof document !== 'undefined'

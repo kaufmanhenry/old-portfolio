@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box } from 'grid-styled';
 
-import Navigation from './Navigation';
-import StyledApp, { NiceLink } from './StyledApp';
-import Footer from './Footer';
+import Navigation from './components/Navigation';
+import StyledApp, { NiceLink } from './components/StyledApp';
+import Footer from './components/Footer';
 
 const NoMatch = () => (
   <StyledApp>

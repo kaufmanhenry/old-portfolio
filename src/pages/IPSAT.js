@@ -1,11 +1,11 @@
 import React from 'react';
 import { Flex, Box } from 'grid-styled';
 
-import StyledApp, { SubText, Container } from '../StyledApp';
-import Navigation from '../Navigation';
-import PanelContainer, { TextContainer } from '../PanelContainer';
-import Introduction from '../Introduction';
-import Footer from '../Footer';
+import StyledApp, { SubText, Container } from '../components/StyledApp';
+import Navigation from '../components/Navigation';
+import PanelContainer, { TextContainer } from '../components/PanelContainer';
+import Introduction from '../components/Introduction';
+import Footer from '../components/Footer';
 
 export default function () {
   return (

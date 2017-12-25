@@ -4,10 +4,10 @@ import { Flex, Box } from 'grid-styled';
 
 import { colors } from '../Variables';
 
-import Navigation from '../Navigation';
-import StyledApp from '../StyledApp';
-import Footer from '../Footer';
-import Project from './Project';
+import Navigation from '../components/Navigation';
+import StyledApp from '../components/StyledApp';
+import Footer from '../components/Footer';
+import Project from '../components/Project';
 
 export default function() {
   return (
