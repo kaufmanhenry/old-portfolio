@@ -28,7 +28,7 @@ export default function() {
         <Project
           photo="images/nexleader-main.svg"
           name="nexleader IPSAT"
-          link="/ipsat"
+          link="/work/ipsat"
           description="Helping people understand their leadership potentials."
           reverse
         />
