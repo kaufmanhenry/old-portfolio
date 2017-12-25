@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 
 import Head from './Head';
-import Home from './Home';
-import About from './About';
+import Home from './Home/Home';
+import Blink from './Blink/Blink';
 
 // universal router component
 const Router = typeof document !== 'undefined'
@@ -27,8 +27,8 @@ export default function(props) {
           render={() => <Home {...props} />}
         />
         <Route
-          path='/about'
-          render={() => <About {...props} />}
+          path='/blink'
+          render={() => <Blink {...props} />}
         />
       </div>
     </Router>

@@ -13,13 +13,13 @@
   },
   "scripts": {
     "start": "x0 dev src/App.js",
-    "build": "x0 static src/App.js --out-dir dist --static --cssLibrary='styled-components' && echo 'kaufman.io' >> dist/CNAME",
+    "build": "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components' && echo 'kaufman.io' >> dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "x0": {
     "routes": [
       "/",
-      "/about"
+      "/blink"
     ]
   }
 }

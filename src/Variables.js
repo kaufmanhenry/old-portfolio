@@ -1,4 +1,4 @@
-export const fontFamily = 'nimbus sans,sans-serif';
+export const fontFamily = 'aktiv grotesk,sans-serif';
 
 export const colors = {
   black: '#111',

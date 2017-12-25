@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 
-import { colors } from './Variables';
+import { colors } from '../Variables';
 
 const StyledProject = styled.div`
   img {
@@ -14,19 +14,18 @@ const StyledProject = styled.div`
     color: ${colors.black};
     font-weight: 500;
     margin-bottom: 8px;
-    a {
-      color: ${colors.black};
-      text-decoration: none;
-      transition: color .15s ease-in;
-      &:hover {
-        color: ${colors.blue};
-      }
-    }
   }
   p {
     color: ${colors.darkGray};
     line-height: 1.5;
     margin: 0;
+  }
+  a {
+    color: ${colors.blue};
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
@@ -37,10 +36,10 @@ const Project = ({ name, photo, link, description, reverse }) => (
         <img src={photo} />
       </Box>
       <Box w={[1, 1/3]} px={2}>
-        <h3>
-          <a href={link} target="_blank">{name}</a>
-        </h3>
+        <h3>{name}</h3>
         <p>{description}</p>
+        <br />
+        <a href={link}>View the Case Study</a>
       </Box>
     </Flex>
   </StyledProject>
