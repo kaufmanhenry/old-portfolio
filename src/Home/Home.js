@@ -20,7 +20,7 @@ export default function() {
         <Project
           photo="images/blink-main.svg"
           name="Blink Lending"
-          link="/blink"
+          link="/work/blink"
           description="A 21st century online mortgage experience for Canadian citizens."
         />
       </Box>
