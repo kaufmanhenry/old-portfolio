@@ -19,7 +19,8 @@
   "x0": {
     "routes": [
       "/",
-      "/blink"
+      "/work/blink",
+      "/work/nexleader"
     ]
   }
 }

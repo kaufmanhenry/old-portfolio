@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { colors } from './Variables';
 
 const StyledApp = styled.div`
@@ -36,6 +37,14 @@ export const SubText = styled.p`
   margin: 0;
   padding: 0;
   max-width: 640px;
+`;
+
+export const NiceLink = styled(Link)`
+  color: ${colors.blue};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default StyledApp;
