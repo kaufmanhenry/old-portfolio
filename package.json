@@ -17,9 +17,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "rm -rf out && rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && echo 'kaufman.io' >> out/CNAME && git add out/ && git commit -m \"Update gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && echo 'kaufman.io' >> out/CNAME && node deploy.js"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "1.4.0"
+    "babel-plugin-styled-components": "1.4.0",
+    "gh-pages": "1.1.0"
   }
 }

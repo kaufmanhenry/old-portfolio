@@ -26,13 +26,13 @@ export default function () {
       <Box>
         <PanelContainer
           direction="full"
-          image="static/images/blink-main.svg"
+          image="/static/images/blink-main.svg"
           header="A redesigned application experience"
           text="When most people think of mortgage applications, they typically think of boring, clunky, slow apps. I worked with Blink to ensure the opposite of that and provide its users with a simple design that communicates clear intentions."
         />
         <PanelContainer
           direction="left"
-          image="static/images/blink-broker.png"
+          image="/static/images/blink-broker.png"
           header="Broker Interface"
           text="When building an interface for the broker to use, we wanted to ensure that clarity to make a correct borrower deal decision drove the process. To do this, we kept the design simple and used varying typographic styles to define elements."
         />
@@ -60,7 +60,7 @@ export default function () {
         </Container>
         <PanelContainer
           direction="right"
-          image="static/images/blink-approval.png"
+          image="/static/images/blink-approval.png"
           header="Borrower Approval"
           text="The admin interface used in the Blink portal was a critical element to the design, that we worked countless iterations on. We wanted to provide brokers with a simple experience for approving new applicants without hassle."
         />
