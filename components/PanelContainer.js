@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { colors } from '../Variables';
+import { colors } from './Variables';
 import StyledApp, { Container } from './StyledApp';
 
 const StyledFull = styled.div``;

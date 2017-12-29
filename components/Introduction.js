@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { colors } from '../Variables';
+import { colors } from './Variables';
 
 const Intro = styled.div`
   border-top: solid 1px ${colors.snow};

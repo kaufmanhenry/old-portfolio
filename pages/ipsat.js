@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, Box } from 'grid-styled';
 
+import Head from '../components/Head';
 import StyledApp, { SubText, Container } from '../components/StyledApp';
 import Navigation from '../components/Navigation';
 import PanelContainer, { TextContainer } from '../components/PanelContainer';
@@ -10,6 +11,7 @@ import Footer from '../components/Footer';
 export default function () {
   return (
     <div>
+      <Head />
       <StyledApp>
         <Navigation />
         <Box py={4}>
@@ -24,13 +26,13 @@ export default function () {
       <Box>
         <PanelContainer
           direction="full"
-          image="../images/nexleader-assessment.png"
+          image="static/images/nexleader-assessment.png"
           header="nexleader IPSAT Assessment"
           text="The main nexleader IPSAT assessment is at the core of the web application. While designing, I focused on simplicity, as I didn’t want the user to get distracted, but instead be able to just focus on the application one step at a time."
         />
         <PanelContainer
           direction="left"
-          image="../images/nexleader-groups.png"
+          image="static/images/nexleader-groups.png"
           header="User Management"
           text="A large part of ensuring the application flows smoothly, is managing users both through groups and inviting new users to onboard. With so many users to manage, it was important to make sure that the design was clear and concise."
         />
@@ -58,7 +60,7 @@ export default function () {
         </Container>
         <PanelContainer
           direction="right"
-          image="../images/nexleader-onboarding.png"
+          image="static/images/nexleader-onboarding.png"
           header="Onboarding Experience"
           text="An important part of the IPSAT experience, is the onboarding included when a user signs up for the app. This was not an original part, but one that I found was equally as important as any other to ensure clarity while signing up."
         />

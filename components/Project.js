@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 import { Flex, Box } from 'grid-styled';
 
-import { colors } from '../Variables';
+import { colors } from './Variables';
 
 const StyledProject = styled.div`
   img {
@@ -39,7 +40,9 @@ const Project = ({ name, photo, link, description, reverse }) => (
         <h3>{name}</h3>
         <p>{description}</p>
         <br />
-        <a href={link}>View the Case Study</a>
+        <Link href={link}>
+          <a>View the Case Study</a>
+        </Link>
       </Box>
     </Flex>
   </StyledProject>

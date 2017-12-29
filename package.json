@@ -6,21 +6,19 @@
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-react": "6.24.1",
     "grid-styled": "2.0.0-11",
+    "next": "latest",
     "react": "16.2.0",
     "react-router-dom": "4.2.2",
     "styled-components": "2.3.3"
   },
   "scripts": {
-    "start": "x0 dev src/App.js",
-    "build": "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components' && echo 'kaufman.io' >> dist/CNAME",
-    "deploy": "gh-pages -d dist"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "x0": {
-    "routes": [
-      "/",
-      "/work/blink",
-      "/work/nexleader"
-    ]
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.4.0"
   }
 }
