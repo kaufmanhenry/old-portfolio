@@ -26,6 +26,13 @@ export const TextContainer = styled.div`
     line-height: 1.5;
     max-width: 640px;
   }
+  a {
+    color: ${colors.blue};
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const ImageContainer = styled.div`
