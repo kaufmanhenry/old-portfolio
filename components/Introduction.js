@@ -24,11 +24,11 @@ const Text = styled.p`
 const Introduction = ({ desc, skills }) => (
   <Intro>
     <Flex wrap mx={-2} pt={3}>
-      <Box w={[1, 1/2]} px={2} pt={3}>
+      <Box w={[1, 1 / 2]} px={2} pt={3}>
         <Header>INTRODUCTION</Header>
         <Text>{desc}</Text>
       </Box>
-      <Box w={[1, 1/2]} px={2} pt={3}>
+      <Box w={[1, 1 / 2]} px={2} pt={3}>
         <Header>SKILLS</Header>
         {skills.map((s, index) => <Text key={index}>{s}</Text>)}
       </Box>

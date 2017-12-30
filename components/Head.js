@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import { fontFamily } from './Variables';
 
@@ -15,6 +15,7 @@ export default () => (
         margin: 0;
         padding: 0;
       } h1,h2,h3,h4,h5,h6 {font-weight:500;margin:0;padding:0}`
-    }} />
+    }}
+    />
   </Head>
 );

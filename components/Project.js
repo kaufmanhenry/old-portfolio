@@ -33,10 +33,10 @@ const StyledProject = styled.div`
 const Project = ({ name, photo, link, description, reverse }) => (
   <StyledProject>
     <Flex align="center" mx={-2} wrap direction={reverse ? 'row-reverse' : 'row'}>
-      <Box w={[1, 2/3]} px={2}>
-        <img src={photo} />
+      <Box w={[1, 2 / 3]} px={2}>
+        <img src={photo} alt={name} />
       </Box>
-      <Box w={[1, 1/3]} px={2}>
+      <Box w={[1, 1 / 3]} px={2}>
         <h3>{name}</h3>
         <p>{description}</p>
         <br />

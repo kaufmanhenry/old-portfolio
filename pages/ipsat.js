@@ -20,7 +20,7 @@ export default function () {
         </Box>
         <Introduction
           desc="nexleader IPSAT is an online platform for religious, church-related groups to foster both leadership and spritual development in a community way. The platform helps mentor people through sessions and coaching among the community."
-          skills={["Full Stack Development", "UI/UX Design"]}
+          skills={['Full Stack Development', 'UI/UX Design']}
         />
       </StyledApp>
       <Box>
@@ -38,19 +38,19 @@ export default function () {
         />
         <Container>
           <Flex wrap mx={-2} my={3}>
-            <Box w={[1, 1/3]} px={2} my={3}>
+            <Box w={[1, 1 / 3]} px={2} my={3}>
               <TextContainer left>
                 <h3>Session Scheduling</h3>
                 <p>Scheduling sessions for users was a critical component to leadership growth for participants. When designing the session scheduling component, I focused on communicating dates and times across time zones effectively.</p>
               </TextContainer>
             </Box>
-            <Box w={[1, 1/3]} px={2} my={3}>
+            <Box w={[1, 1 / 3]} px={2} my={3}>
               <TextContainer left>
                 <h3>IPSAT Report</h3>
                 <p>Coupled with the IPSAT assessment is the report, where participants can reflect on data from their assessment. The report was designed in a way that not only shows all the data necessary, but also in an inviting manner.</p>
               </TextContainer>
             </Box>
-            <Box w={[1, 1/3]} px={2} my={3}>
+            <Box w={[1, 1 / 3]} px={2} my={3}>
               <TextContainer left>
                 <h3>Team Report</h3>
                 <p>The team IPSAT report is designed to help teams understand where they are at with their leadership. This involved a lot of data handling, so the design for this page was very delicate and had to be done thoughtfully.</p>

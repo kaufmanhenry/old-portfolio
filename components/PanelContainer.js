@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { colors } from './Variables';
-import StyledApp, { Container } from './StyledApp';
+import { Container } from './StyledApp';
 
 const StyledFull = styled.div``;
 
@@ -50,7 +50,8 @@ const InlineImage = styled.div`
 
 const PanelContainer = ({ image, header, text, direction }) => (
   <div>
-    {direction === 'full' && <StyledFull>
+    {direction === 'full' &&
+    <StyledFull>
       <ImageContainer>
         <Container>
           <img src={image} alt={text} />
@@ -65,15 +66,16 @@ const PanelContainer = ({ image, header, text, direction }) => (
         </Box>
       </Container>
     </StyledFull>}
-    {direction === 'left' && <StyledLeft>
+    {direction === 'left' &&
+    <StyledLeft>
       <Container>
         <Flex align="center" direction="row-reverse" wrap mx={-2} py={4}>
-          <Box w={[1, 2/3]} px={2}>
+          <Box w={[1, 2 / 3]} px={2}>
             <InlineImage>
               <img src={image} alt={text} />
             </InlineImage>
           </Box>
-          <Box w={[1, 1/3]} px={2} pt={2}>
+          <Box w={[1, 1 / 3]} px={2} pt={2}>
             <TextContainer left>
               <h3>{header}</h3>
               <p>{text}</p>
@@ -82,15 +84,16 @@ const PanelContainer = ({ image, header, text, direction }) => (
         </Flex>
       </Container>
     </StyledLeft>}
-    {direction === 'right' && <StyledLeft>
+    {direction === 'right' &&
+    <StyledLeft>
       <Container>
         <Flex align="center" wrap mx={-2} py={4}>
-          <Box w={[1, 2/3]} px={2}>
+          <Box w={[1, 2 / 3]} px={2}>
             <InlineImage>
               <img src={image} alt={text} />
             </InlineImage>
           </Box>
-          <Box w={[1, 1/3]} px={2} pt={2}>
+          <Box w={[1, 1 / 3]} px={2} pt={2}>
             <TextContainer left>
               <h3>{header}</h3>
               <p>{text}</p>

@@ -1,3 +1,3 @@
 const ghPages = require('gh-pages');
 
-ghPages.publish('out', { dotfiles: true }, (err) => {});
+ghPages.publish('out', { dotfiles: true }, () => {});

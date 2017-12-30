@@ -20,7 +20,7 @@ const StyledFooter = styled.div`
   }
 `;
 
-export default function() {
+export default function () {
   return (
     <StyledFooter>
       <Flex wrap>
@@ -29,5 +29,5 @@ export default function() {
         <Box>2018</Box>
       </Flex>
     </StyledFooter>
-  )
+  );
 }
