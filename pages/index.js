@@ -3,7 +3,7 @@ import { Flex, Box } from 'grid-styled';
 
 import Head from '../components/Head';
 import Navigation from '../components/Navigation';
-import StyledApp, { NiceLink } from '../components/StyledApp';
+import StyledApp from '../components/StyledApp';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
 import { TextContainer } from '../components/PanelContainer';
@@ -13,7 +13,7 @@ export default () => (
     <Head />
     <Navigation />
     <Box py={4}>
-      <h1>Product <span>designer</span> and full stack <span>developer</span> from Denver.</h1>
+      <h1>I <span>design</span> and <span>develop</span> websites that help startups launch.</h1>
     </Box>
     <Box py={4}>
       <Project
