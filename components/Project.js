@@ -9,7 +9,7 @@ const StyledProject = styled.div`
   img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
   }
   h3 {
     color: ${colors.black};
@@ -32,19 +32,17 @@ const StyledProject = styled.div`
 
 const Project = ({ name, photo, link, description, reverse }) => (
   <StyledProject>
-    <Flex align="center" mx={-2} wrap direction={reverse ? 'row-reverse' : 'row'}>
-      <Box w={[1, 2 / 3]} px={2}>
-        <img src={photo} alt={name} />
-      </Box>
-      <Box w={[1, 1 / 3]} px={2}>
-        <h3>{name}</h3>
-        <p>{description}</p>
-        <br />
-        <Link href={link}>
-          <a>View the Case Study</a>
-        </Link>
-      </Box>
-    </Flex>
+    <Box>
+      <img src={photo} alt={name} />
+    </Box>
+    <Box mt={3}>
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <br />
+      <Link href={link}>
+        <a>View the Case Study</a>
+      </Link>
+    </Box>
   </StyledProject>
 );
 

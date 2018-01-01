@@ -8,6 +8,7 @@ const StyledFooter = styled.div`
   margin-top: 40px;
   border-top: solid 1px ${colors.snow};
   color: ${colors.darkGray};
+  line-height: 1.5;
   a {
     color: ${colors.darkGray};
     text-decoration: none;
@@ -18,15 +19,23 @@ const StyledFooter = styled.div`
   .grow {
     flex-grow: 1;
   }
+  b {
+    font-weight: 500;
+    color: ${colors.black};
+  }
 `;
 
 export default function () {
   return (
     <StyledFooter>
       <Flex wrap>
-        <Box>Henry Kaufman • <a href="mailto:henry@kaufman.io">henry@kaufman.io</a></Box>
+        <Box>
+          <b>Henry Kaufman</b>
+          <br /><a href="mailto:henry@kaufman.io">henry@kaufman.io</a>
+          <br />@kaufmanhenry<br />
+        </Box>
         <div className="grow" />
-        <Box>2018</Box>
+        <Box>&copy; 2018</Box>
       </Flex>
     </StyledFooter>
   );
