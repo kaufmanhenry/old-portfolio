@@ -32,7 +32,7 @@ export default function () {
         <Box>
           <b>Henry Kaufman</b>
           <br /><a href="mailto:henry@kaufman.io">henry@kaufman.io</a>
-          <br />@kaufmanhenry<br />
+          <br /><a href="https://twitter.com/kaufmanhenry">@kaufmanhenry</a>
         </Box>
         <div className="grow" />
         <Box>&copy; 2018</Box>
