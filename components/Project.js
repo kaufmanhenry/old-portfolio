@@ -1,15 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { Flex, Box } from 'grid-styled';
+import { Box } from 'grid-styled';
 
 import { colors } from './Variables';
 
 const StyledProject = styled.div`
+  background-color: #fafafa;
+  padding: 80px 24px;
+  position: relative;
+  transition: box-shadow .3s ease;
+  
+  &:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+  }
   img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
   }
   h3 {
     color: ${colors.black};
@@ -31,19 +39,19 @@ const StyledProject = styled.div`
 `;
 
 const Project = ({ name, photo, link, description, reverse }) => (
-  <StyledProject>
-    <Box>
-      <img src={photo} alt={name} />
-    </Box>
-    <Box mt={3}>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <br />
-      <Link href={link}>
-        <a>View the Case Study</a>
-      </Link>
-    </Box>
-  </StyledProject>
+  <Link href={link}>
+    <a style={{textDecoration: 'none'}}>
+      <StyledProject>
+        <Box>
+          <img src={photo} alt={name} />
+        </Box>
+        <Box mt={3}>
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </Box>
+      </StyledProject>
+    </a>
+  </Link>
 );
 
 export default Project;
