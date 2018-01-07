@@ -12,7 +12,7 @@ export default () => (
   <StyledApp>
     <Head />
     <Navigation />
-    <Box py={4}>
+    <Box py={4} mt={4}>
       <h1>I <span>design</span> and <span>develop</span> websites that help startups launch.</h1>
     </Box>
     <Flex py={4} mx={-2} wrap>

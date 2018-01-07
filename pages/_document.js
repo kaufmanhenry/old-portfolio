@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <HeadContent />
-        <body>
+        <body className="tk-usual">
           <Main />
           <NextScript />
         </body>

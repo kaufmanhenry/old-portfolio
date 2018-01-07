@@ -1,4 +1,4 @@
-export const fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif';
+export const fontFamily = 'usual, sans-serif';
 
 export const colors = {
   black: '#111',

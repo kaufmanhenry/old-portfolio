@@ -7,6 +7,7 @@ export default () => (
   <Head>
     <title>Henry Kaufman</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/tut6mfe.css" />
     <style dangerouslySetInnerHTML={{
       __html: `body{
         font-family:${fontFamily};
