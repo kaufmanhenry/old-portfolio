@@ -16,7 +16,7 @@ export default () => (
       <h1>I <span>design</span> and <span>develop</span> websites that help startups launch.</h1>
     </Box>
     <Flex py={4} mx={-2} wrap>
-      <Box w={[1, 1 / 2]} px={2} mb={4}>
+      <Box w={[1, 1 / 2]} px={2} mb={3}>
         <Project
           photo="static/images/blink-main.svg"
           name="Blink Mortgage"
@@ -24,13 +24,30 @@ export default () => (
           description="A 21st century Canadian mortgage company dedicated to providing fast, simple mortgages."
         />
       </Box>
-      <Box w={[1, 1 / 2]} px={2}>
+      <Box w={[1, 1 / 2]} px={2} mb={3}>
         <Project
           photo="static/images/nexleader-main.svg"
           name="nexleader IPSAT"
           link="/ipsat"
           description="A user management tool that helps people understand and utilize their passions."
           reverse
+        />
+      </Box>
+      <Box w={[1, 1 / 2]} px={2} mb={3}>
+        <Project
+          photo="static/images/sponta-dashboard.svg"
+          name="Sponta"
+          link="/sponta"
+          description="Aiming to provide small groups a way of communication through a simple application interface."
+          reverse
+        />
+      </Box>
+      <Box w={[1, 1 / 2]} px={2} mb={3}>
+        <Project
+          photo="static/images/blade-create.svg"
+          name="Blade Signatures"
+          link="/blade"
+          description="A simple way to create simple, beautiful signatures for Gmail all inside of Chrome."
         />
       </Box>
     </Flex>
@@ -41,20 +58,20 @@ export default () => (
       <Flex wrap mx={-2}>
         <Box w={[1, 1 / 3]} px={2} mb={3}>
           <TextContainer left>
-            <h3>Sponta</h3>
-            <Box mb={2}>
-              <p>Sponta is an app that lets you broadcast relevant push notifications to the right people.</p>
-            </Box>
-            <a href="http://sponta.co" target="_blank">View Site</a>
-          </TextContainer>
-        </Box>
-        <Box w={[1, 1 / 3]} px={2} mb={3}>
-          <TextContainer left>
             <h3>tragedy.party</h3>
             <Box mb={2}>
               <p>Learn about the history of tragedy, how it has changed over time, and its influence.</p>
             </Box>
             <a href="http://tragedy.party" target="_blank">View Site</a>
+          </TextContainer>
+        </Box>
+        <Box w={[1, 1 / 3]} px={2} mb={3}>
+          <TextContainer left>
+            <h3>designBase</h3>
+            <Box mb={2}>
+              <p>Build user interfaces and export them to your favorite framework.</p>
+            </Box>
+            <a href>Coming Soon</a>
           </TextContainer>
         </Box>
         <Box w={[1, 1 / 3]} px={2} mb={3}>
