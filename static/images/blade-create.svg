@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FAFAFA;">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="44.4444444"></rect>
+        <filter x="-0.4%" y="-5.6%" width="100.9%" height="115.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="205.555556" height="259.444444" rx="2.22222222"></rect>
+        <filter x="-1.7%" y="-1.0%" width="103.4%" height="102.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="230.555556" y="0" width="436.111111" height="259.444444" rx="2.22222222"></rect>
+        <filter x="-0.8%" y="-1.0%" width="101.6%" height="102.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="115" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="230" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-13" x="345" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-15" x="460.555556" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-17" x="576.111111" y="0" width="90.5555556" height="55.5555556" rx="2.22222222"></rect>
+        <filter x="-3.9%" y="-4.5%" width="107.7%" height="112.6%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-19" x="0" y="0" width="666.666667" height="62.2222222" rx="2.22222222"></rect>
+        <filter x="-0.5%" y="-4.0%" width="101.0%" height="111.2%" filterUnits="objectBoundingBox" id="filter-20">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-21" x="0" y="0" width="103.333333" height="28.8888889" rx="2.22222222"></rect>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-10">
+                <g id="Group-7">
+                    <rect id="Rectangle" fill="#5164E8" x="0" y="0" width="800" height="55.5555556"></rect>
+                    <text id="Blade" font-family="LLBrown-Bold, LL Brown" font-size="13.3333333" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="66.6666667" y="31.3333333">Blade</tspan>
+                    </text>
+                    <text id="Hi,-Henry-Kaufman" font-family="Lato-Regular, Lato" font-size="8.88888889" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="658.888889" y="30.1111111">Hi, Henry Kaufman</tspan>
+                    </text>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 55.555556)">
+                    <g id="Rectangle-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="Dashboard" font-family="Lato-Bold, Lato" font-size="11.1111111" font-weight="bold" fill="#AAAAAA">
+                        <tspan x="66.6666667" y="24.8888889">Dashboard</tspan>
+                    </text>
+                    <g id="Group-5" transform="translate(153.888889, 13.888889)" fill="#5164E8">
+                        <rect id="Rectangle-3" x="0" y="29.4444444" width="33.3333333" height="1.11111111"></rect>
+                        <text id="Create" font-family="Lato-Bold, Lato" font-size="11.1111111" font-weight="bold">
+                            <tspan x="0" y="11">Create</tspan>
+                        </text>
+                    </g>
+                    <text id="Upgrade" font-family="Lato-Bold, Lato" font-size="11.1111111" font-weight="bold" fill="#AAAAAA">
+                        <tspan x="220.555556" y="24.8888889">Upgrade</tspan>
+                    </text>
+                    <text id="Settings" font-family="Lato-Bold, Lato" font-size="11.1111111" font-weight="bold" fill="#AAAAAA">
+                        <tspan x="296.111111" y="24.8888889">Settings</tspan>
+                    </text>
+                </g>
+                <text id="Want-to-create-your" font-family="Lato-Regular, Lato" font-size="11.1111111" font-weight="normal">
+                    <tspan x="551.111111" y="134.888889" fill="#AAAAAA">Want to create your own? </tspan>
+                    <tspan x="679.816667" y="134.888889" fill="#5164E8">Start fresh</tspan>
+                    <tspan x="730.561111" y="134.888889" fill="#AAAAAA">.</tspan>
+                </text>
+                <g id="Group-2" transform="translate(66.666667, 265.555556)">
+                    <g id="Rectangle-9">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Group-9" transform="translate(16.666667, 200.555556)" font-size="11.1111111">
+                        <text id="" font-family="FontAwesome" font-weight="normal" fill="#AAAAAA">
+                            <tspan x="163.888889" y="11.6666667"></tspan>
+                        </text>
+                        <text id="Images" font-family="Lato-Bold, Lato" font-weight="bold" fill="#333333">
+                            <tspan x="0" y="11">Images</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9-Copy" transform="translate(16.666667, 225.000000)" font-size="11.1111111">
+                        <text id="" font-family="FontAwesome" font-weight="normal" fill="#AAAAAA">
+                            <tspan x="163.888889" y="11.6666667"></tspan>
+                        </text>
+                        <text id="Something-else" font-family="Lato-Bold, Lato" font-weight="bold" fill="#333333">
+                            <tspan x="0" y="11">Something else</tspan>
+                        </text>
+                    </g>
+                    <g id="Rectangle-9-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Group-8" transform="translate(16.666667, 16.666667)">
+                        <g id="Group-2" transform="translate(0.000000, 20.000000)">
+                            <rect id="Rectangle-12" stroke="#ECF0F1" stroke-width="0.555555556" x="0.277777778" y="13.0555556" width="80" height="28.3333333" rx="2.22222222"></rect>
+                            <text id="First-Name" font-family="Lato-Bold, Lato" font-size="7.77777778" font-weight="bold" fill="#AAAAAA">
+                                <tspan x="0" y="8">First Name</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-2-Copy" transform="translate(91.666667, 20.000000)">
+                            <rect id="Rectangle-12" stroke="#ECF0F1" stroke-width="0.555555556" x="0.277777778" y="13.0555556" width="80" height="28.3333333" rx="2.22222222"></rect>
+                            <text id="Last-Name" font-family="Lato-Bold, Lato" font-size="7.77777778" font-weight="bold" fill="#AAAAAA">
+                                <tspan x="0" y="8">Last Name</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-2-Copy-5" transform="translate(0.000000, 131.111111)">
+                            <rect id="Rectangle-12" stroke="#ECF0F1" stroke-width="0.555555556" x="0.277777778" y="13.0555556" width="171.666667" height="28.3333333" rx="2.22222222"></rect>
+                            <text id="Phone" font-family="Lato-Bold, Lato" font-size="7.77777778" font-weight="bold" fill="#AAAAAA">
+                                <tspan x="0" y="8">Phone</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-2-Copy-3" transform="translate(0.000000, 68.333333)">
+                            <rect id="Rectangle-12" stroke="#ECF0F1" stroke-width="0.555555556" x="0.277777778" y="13.0555556" width="171.666667" height="42.7777778" rx="2.22222222"></rect>
+                            <text id="Signature" font-family="Lato-Bold, Lato" font-size="7.77777778" font-weight="bold" fill="#AAAAAA">
+                                <tspan x="0" y="8">Signature</tspan>
+                            </text>
+                        </g>
+                        <text id="" font-family="FontAwesome" font-size="11.1111111" font-weight="normal" fill="#AAAAAA">
+                            <tspan x="163.888889" y="11.6666667"></tspan>
+                        </text>
+                        <text id="Personal-Info" font-family="Lato-Bold, Lato" font-size="11.1111111" font-weight="bold" fill="#333333">
+                            <tspan x="0" y="11">Personal Info</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(66.666667, 155.000000)">
+                    <g id="Rectangle-10">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Rectangle-10-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        <rect stroke="#5164E8" stroke-width="2.22222222" x="116.111111" y="1.11111111" width="88.3333333" height="53.3333333" rx="2.22222222"></rect>
+                    </g>
+                    <g id="Rectangle-10-Copy-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="Rectangle-10-Copy-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    </g>
+                    <g id="Rectangle-10-Copy-4">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                    </g>
+                    <g id="Rectangle-10-Copy-5">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
+                    </g>
+                </g>
+                <text id="1.-Choose-a-template" font-family="Lato-Bold, Lato" font-size="13.3333333" font-weight="bold" fill="#333333">
+                    <tspan x="66.6666667" y="135.222222">1. Choose a template</tspan>
+                </text>
+                <text id="2.-Customize" font-family="Lato-Bold, Lato" font-size="13.3333333" font-weight="bold" fill="#333333">
+                    <tspan x="66.6666667" y="245.777778">2. Customize</tspan>
+                </text>
+                <text id="3.-Name-and-Save" font-family="Lato-Bold, Lato" font-size="13.3333333" font-weight="bold" fill="#333333">
+                    <tspan x="66.6666667" y="560.222222">3. Name and Save</tspan>
+                </text>
+                <g id="Group-4" transform="translate(67.777778, 580.000000)">
+                    <g id="Rectangle-14">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
+                    </g>
+                    <g id="Group-3" transform="translate(22.222222, 16.666667)" stroke="#ECF0F1" stroke-width="0.555555556">
+                        <rect id="Rectangle-12" x="0.277777778" y="0.277777778" width="195.277778" height="28.3333333" rx="2.22222222"></rect>
+                    </g>
+                    <g id="Group" transform="translate(603.333333, 19.444444)" fill="#5164E8">
+                        <rect id="Rectangle-6" x="0" y="0" width="41.1111111" height="23.8888889" rx="2.22222222"></rect>
+                    </g>
+                </g>
+                <text id="" font-family="FontAwesome" font-size="16.6666667" font-weight="normal" fill="#AAAAAA">
+                    <tspan x="750" y="187.333333"></tspan>
+                </text>
+                <g id="Group-2-Copy-4" transform="translate(202.777778, 117.777778)">
+                    <g id="Rectangle-12">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-21"></use>
+                        <rect stroke="#ECF0F1" stroke-width="0.555555556" x="0.277777778" y="0.277777778" width="102.777778" height="28.3333333" rx="2.22222222"></rect>
+                    </g>
+                    <text id="" font-family="FontAwesome" font-size="8.88888889" font-weight="normal" fill="#AAAAAA">
+                        <tspan x="88.3333333" y="17.4444444"></tspan>
+                    </text>
+                    <text id="Choose-a-category" font-family="Lato-Regular, Lato" font-size="8.88888889" font-weight="normal" fill="#AAAAAA">
+                        <tspan x="8.88888889" y="16.7777778">Choose a category</tspan>
+                    </text>
+                </g>
+                <text id="" font-family="FontAwesome" font-size="16.6666667" font-weight="normal" fill="#AAAAAA">
+                    <tspan x="43.8888889" y="187.333333"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
