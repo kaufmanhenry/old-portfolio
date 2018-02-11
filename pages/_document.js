@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <HeadContent />
-        <body className="tk-aktiv-grotesk">
+        <body className="tk-soleil">
           <Main />
           <NextScript />
         </body>

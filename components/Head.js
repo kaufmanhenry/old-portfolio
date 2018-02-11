@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { fontFamily } from './Variables';
-
 export default () => (
   <Head>
     <title>Henry Kaufman</title>
@@ -10,7 +8,6 @@ export default () => (
     <link rel="stylesheet" href="https://use.typekit.net/tut6mfe.css" />
     <style dangerouslySetInnerHTML={{
       __html: `body{
-        font-family:${fontFamily};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
