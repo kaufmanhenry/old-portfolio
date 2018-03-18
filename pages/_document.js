@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <HeadContent />
-        <body className="tk-soleil">
+        <body className="tk-acumin-pro">
           <Main />
           <NextScript />
         </body>
