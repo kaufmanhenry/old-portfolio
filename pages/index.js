@@ -7,12 +7,14 @@ import StyledApp from '../components/StyledApp';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
 import { TextContainer } from '../components/PanelContainer';
+import { colors } from '../components/Variables';
 
 export default () => (
   <StyledApp>
     <Head />
     <Navigation />
     <Box py={4} mt={4}>
+      <p style={{ color: colors.darkGray }}>This website is out of date and almost a year old. A new site is coming soon!</p>
       <h1>I <span>design</span> and <span>develop</span> websites that help startups launch.</h1>
     </Box>
     <Flex py={4} mx={-2} wrap>

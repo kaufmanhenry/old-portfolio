@@ -8,8 +8,9 @@
   "dependencies": {
     "babel-preset-react": "6.24.1",
     "grid-styled": "2.0.0-11",
-    "next": "latest",
+    "next": "^7.0.2",
     "react": "16.2.0",
+    "react-dom": "^16.5.2",
     "react-router-dom": "4.2.2",
     "styled-components": "2.3.3"
   },

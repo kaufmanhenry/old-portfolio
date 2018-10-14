@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <HeadContent />
-        <body className="tk-acumin-pro">
+        <body className="tk-neue-haas-unica">
           <Main />
           <NextScript />
         </body>
