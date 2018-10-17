@@ -25,9 +25,8 @@ const StyledNav = styled.div`
 
 const Nav = () => (
   <StyledNav>
-    <h3>Henry Kaufman</h3>
     <div className="grow" />
-    <a href="mailto:henry@kaufman.io">henry@kaufman.io</a>
+    <a href="mailto:henry@kaufman.io">contact</a>
   </StyledNav>
 );
 
