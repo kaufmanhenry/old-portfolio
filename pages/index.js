@@ -1,92 +1,120 @@
 import React from 'react';
-import { Flex, Box } from 'grid-styled';
+import { Row, Col } from 'react-grid-system';
+import Link from 'next/link';
 
-import Head from '../components/Head';
-import Navigation from '../components/Navigation';
-import StyledApp from '../components/StyledApp';
-import Footer from '../components/Footer';
-import Project from '../components/Project';
-import { TextContainer } from '../components/PanelContainer';
-import { colors } from '../components/Variables';
+import {
+  Navbar, Container, Box, Heading1, Heading2, Paragraph, HeadContent, StyledLink, MoreInfo, Bottom
+} from '../components';
 
 export default () => (
-  <StyledApp>
-    <Head />
-    <Navigation />
-    <Box py={4} mt={4}>
-      <p style={{ color: colors.darkGray }}>This website is out of date and almost a year old. A new site is coming soon!</p>
-      <h1>I <span>design</span> and <span>develop</span> websites that help startups launch.</h1>
-    </Box>
-    <Flex py={4} mx={-2} wrap>
-      <Box w={[1, 1 / 2]} px={2} mb={3}>
-        <Project
-          photo="static/images/blink-main.svg"
-          name="Blink Mortgage"
-          link="/blink"
-          description="A 21st century Canadian mortgage company dedicated to providing fast, simple mortgages."
-        />
+  <div>
+    <HeadContent />
+    <Navbar />
+    <Container>
+      <Box mt={10} mb={10}>
+        <Heading1>
+          Designer and developer based out of Boston focused on building intuitive, simple products.
+        </Heading1>
+        <br />
+        <br />
+        <Paragraph large>
+          Currently looking for summer 2019 internship opportunities in Boston focused on the
+          intersection of design and development.
+        </Paragraph>
       </Box>
-      <Box w={[1, 1 / 2]} px={2} mb={3}>
-        <Project
-          photo="static/images/nexleader-main.svg"
-          name="nexleader IPSAT"
-          link="/ipsat"
-          description="A user management tool that helps people understand and utilize their passions."
-          reverse
-        />
-      </Box>
-      <Box w={[1, 1 / 2]} px={2} mb={3}>
-        <Project
-          photo="static/images/sponta-dashboard.svg"
-          name="Sponta"
-          link="/sponta"
-          description="Aiming to provide small groups a way of communication through a simple application interface."
-          reverse
-        />
-      </Box>
-      <Box w={[1, 1 / 2]} px={2} mb={3}>
-        <Project
-          photo="static/images/blade-create.svg"
-          name="Blade Signatures"
-          link="/blade"
-          description="A simple way to create simple, beautiful signatures for Gmail all inside of Chrome."
-        />
-      </Box>
-    </Flex>
-    <Box py={4}>
-      <Box mb={3}>
-        <h2>Other Projects</h2>
-      </Box>
-      <Flex wrap mx={-2}>
-        <Box w={[1, 1 / 3]} px={2} mb={3}>
-          <TextContainer left>
-            <h3>tragedy.party</h3>
+      <Row>
+        <Col sm={6}>
+          <Box mb={6}>
             <Box mb={2}>
-              <p>Learn about the history of tragedy, how it has changed over time, and its influence.</p>
+              <img src="/static/home/cmo.svg" style={{ width: '100%' }} alt="cmo img" />
             </Box>
-            <a href="http://tragedy.party" target="_blank">View Site</a>
-          </TextContainer>
-        </Box>
-        <Box w={[1, 1 / 3]} px={2} mb={3}>
-          <TextContainer left>
-            <h3>designBase</h3>
+            <Heading2>Compare My Offers</Heading2>
+            <Box mt={1} mb={2}>
+              <Paragraph>
+                A simple online tool to help home buyers understand and compare various mortgage
+                rates.
+              </Paragraph>
+            </Box>
+            <Link href="/work/compare-my-offers">
+              <StyledLink>View the case study</StyledLink>
+            </Link>
+          </Box>
+        </Col>
+        <Col sm={6}>
+          <Box mb={6}>
             <Box mb={2}>
-              <p>Build user interfaces and export them to your favorite framework.</p>
+              <img src="/static/home/duworks.svg" style={{ width: '100%' }} alt="duworks" />
             </Box>
-            <a href>Coming Soon</a>
-          </TextContainer>
-        </Box>
-        <Box w={[1, 1 / 3]} px={2} mb={3}>
-          <TextContainer left>
-            <h3>intrn</h3>
+            <Heading2>DUWorks</Heading2>
+            <Box mt={1} mb={2}>
+              <Paragraph>
+                An online platform connecting University of Denver students with local companies for
+                freelancing opportunities.
+              </Paragraph>
+            </Box>
+            <Link href="/work/duworks">
+              <StyledLink>View the case study</StyledLink>
+            </Link>
+          </Box>
+        </Col>
+        <Col sm={6}>
+          <Box mb={6}>
             <Box mb={2}>
-              <p>Getting an internship at a startup is hard. Here{"'"}s an easy way.</p>
+              <img src="/static/home/du-innovation-map.svg" style={{ width: '100%' }} alt="nexleader ipsat img" />
             </Box>
-            <a href>Coming Soon</a>
-          </TextContainer>
-        </Box>
-      </Flex>
-    </Box>
-    <Footer />
-  </StyledApp>
+            <Heading2>DU Innovation Map</Heading2>
+            <Box mt={1} mb={2}>
+              <Paragraph>
+                A map showcasing the innovative and entrepreneurial resources at the University of
+                Denver.
+              </Paragraph>
+            </Box>
+            <Link href="/work/du-innovation-map">
+              <StyledLink>View the case study</StyledLink>
+            </Link>
+          </Box>
+        </Col>
+        <Col sm={6}>
+          <Box mb={6}>
+            <Box mb={2}>
+              <img src="/static/home/blink.svg" style={{ width: '100%' }} alt="blink img" />
+            </Box>
+            <Heading2>Blink Mortgage</Heading2>
+            <Box mt={1} mb={2}>
+              <Paragraph>
+                A 21st century Canadian mortgage company dedicated to providing fast, simple
+                mortgages.
+              </Paragraph>
+            </Box>
+            <Link href="/work/blink">
+              <StyledLink>View the case study</StyledLink>
+            </Link>
+          </Box>
+        </Col>
+        <Col sm={6}>
+          <Box mb={6}>
+            <Box mb={2}>
+              <img src="/static/home/ipsat.svg" style={{ width: '100%' }} alt="nexleader ipsat img" />
+            </Box>
+            <Heading2>nexleader IPSAT</Heading2>
+            <Box mt={1} mb={2}>
+              <Paragraph>
+                A user management tool that helps people understand and utilize their passions.
+              </Paragraph>
+            </Box>
+            <Link href="/work/ipsat">
+              <StyledLink>View the case study</StyledLink>
+            </Link>
+          </Box>
+        </Col>
+        <Col sm={6}>
+          <MoreInfo
+            title="👋&nbsp;&nbsp;Are you in Boston?"
+            description="Let's find a time to meet!"
+          />
+        </Col>
+      </Row>
+      <Bottom />
+    </Container>
+  </div>
 );

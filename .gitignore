@@ -1,4 +1,5 @@
 node_modules/
+*.log
 .next/
 out/
-.idea/
+.DS_Store

@@ -1,42 +1,44 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
+import Link from 'next/link';
+
 import { colors } from './Variables';
 
 const StyledFooter = styled.div`
-  padding-top: 40px;
+  align-items: center;
+  color: ${colors.gray};
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
-  border-top: solid 1px ${colors.snow};
-  color: ${colors.darkGray};
-  line-height: 1.5;
+  padding: 40px 0;
   a {
-    color: ${colors.darkGray};
+    color: ${colors.blue};
+    font-size: 24px;
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      opacity: .7;
     }
-  }
-  .grow {
-    flex-grow: 1;
-  }
-  b {
-    font-weight: 500;
-    color: ${colors.black};
   }
 `;
 
-export default function () {
-  return (
-    <StyledFooter>
-      <Flex wrap>
-        <Box>
-          <b>Henry Kaufman</b>
-          <br /><a href="mailto:henry@kaufman.io">henry@kaufman.io</a>
-          <br /><a href="https://twitter.com/kaufmanhenry">@kaufmanhenry</a>
-        </Box>
-        <div className="grow" />
-        <Box>&copy; 2018</Box>
-      </Flex>
-    </StyledFooter>
-  );
-}
+const Grow = styled.div`
+  flex-grow: 1;
+`;
+
+const Footer = ({ nextProjectName, nextProjectLink }) => (
+  <StyledFooter>
+    Next Project
+    <Grow />
+    <Link href={nextProjectLink}>
+      <a>{nextProjectName}</a>
+    </Link>
+  </StyledFooter>
+);
+
+Footer.propTypes = {
+  nextProjectName: PropTypes.string.isRequired,
+  nextProjectLink: PropTypes.string.isRequired
+};
+
+export default Footer;
