@@ -1,7 +1,7 @@
 import React from 'react';
 import Document, { Main, NextScript } from 'next/document';
+import Head from 'next/head';
 import { ServerStyleSheet } from 'styled-components';
-import HeadContent from '../components/Head';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -14,8 +14,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html lang="en">
-        <HeadContent />
-        <body className="tk-neue-haas-unica">
+        <Head>
+          {this.props.styleTags}
+        </Head>
+        <body>
           <Main />
           <NextScript />
         </body>
