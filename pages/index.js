@@ -26,7 +26,9 @@ export default () => (
         <Col sm={6}>
           <Box mb={6}>
             <Box mb={2}>
-              <img src="/static/home/cmo.svg" style={{ width: '100%' }} alt="cmo img" />
+              <Link href="/work/compare-my-offers">
+                <img src="/static/home/cmo.svg" style={{ width: '100%', cursor: 'pointer' }} alt="cmo img" />
+              </Link>
             </Box>
             <Heading2>Compare My Offers</Heading2>
             <Box mt={1} mb={2}>
@@ -43,7 +45,9 @@ export default () => (
         <Col sm={6}>
           <Box mb={6}>
             <Box mb={2}>
-              <img src="/static/home/duworks.svg" style={{ width: '100%' }} alt="duworks" />
+              <Link href="/work/duworks">
+                <img src="/static/home/duworks.svg" style={{ width: '100%', cursor: 'pointer' }} alt="duworks" />
+              </Link>
             </Box>
             <Heading2>DUWorks</Heading2>
             <Box mt={1} mb={2}>
@@ -60,7 +64,9 @@ export default () => (
         <Col sm={6}>
           <Box mb={6}>
             <Box mb={2}>
-              <img src="/static/home/du-innovation-map.svg" style={{ width: '100%' }} alt="nexleader ipsat img" />
+              <Link href="/work/du-innovation-map">
+                <img src="/static/home/du-innovation-map.svg" style={{ width: '100%', cursor: 'pointer' }} alt="nexleader ipsat img" />
+              </Link>
             </Box>
             <Heading2>DU Innovation Map</Heading2>
             <Box mt={1} mb={2}>
@@ -77,7 +83,9 @@ export default () => (
         <Col sm={6}>
           <Box mb={6}>
             <Box mb={2}>
-              <img src="/static/home/blink.svg" style={{ width: '100%' }} alt="blink img" />
+              <Link href="/work/blink">
+                <img src="/static/home/blink.svg" style={{ width: '100%', cursor: 'pointer' }} alt="blink img" />
+              </Link>
             </Box>
             <Heading2>Blink Mortgage</Heading2>
             <Box mt={1} mb={2}>
@@ -94,7 +102,9 @@ export default () => (
         <Col sm={6}>
           <Box mb={6}>
             <Box mb={2}>
-              <img src="/static/home/ipsat.svg" style={{ width: '100%' }} alt="nexleader ipsat img" />
+              <Link href="/work/ipsat">
+                <img src="/static/home/ipsat.svg" style={{ width: '100%', cursor: 'pointer' }} alt="nexleader ipsat img" />
+              </Link>
             </Box>
             <Heading2>nexleader IPSAT</Heading2>
             <Box mt={1} mb={2}>

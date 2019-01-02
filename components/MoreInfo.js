@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors } from './Variables';
+import { StyledLink } from '.';
 
 const StyledMoreInfo = styled.div`
   background-color: ${colors.snow};
@@ -18,14 +19,6 @@ const StyledMoreInfo = styled.div`
     font-size: 16px;
     line-height: 24px;
   }
-  a {
-    color: ${colors.darkGray};
-    font-size: 16px;
-    text-decoration: none;
-    &:hover {
-      opacity: .7;
-    }
-  }
 `;
 
 const MoreInfo = ({ title, description }) => (
@@ -34,7 +27,7 @@ const MoreInfo = ({ title, description }) => (
     <p>
       {description}
       <br />
-      <a href="mailto:henry@kaufman.io">Email me!</a>
+      <StyledLink href="mailto:henry@kaufman.io">Email me!</StyledLink>
     </p>
   </StyledMoreInfo>
 );
