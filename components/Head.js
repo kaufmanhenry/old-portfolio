@@ -46,5 +46,16 @@ export default () => (
     <meta property="og:url" content="http://kaufman.io" />
     <meta property="og:image" content="http://kaufman.io/static/me.jpg" />
     <meta property="og:description" content="Designer and developer based out of Boston focused on building intuitive, simple products." />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131526649-1" />
+    <script dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131526649-1');
+      `
+    }}
+    />
   </Head>
 );
