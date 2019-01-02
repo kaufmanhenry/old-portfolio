@@ -18,8 +18,11 @@ export default () => (
         <br />
         <br />
         <Paragraph large>
-          Currently looking for summer 2019 internship opportunities in Boston focused on the
-          intersection of design and development.
+          {/* Currently looking for summer 2019 internship opportunities in Boston focused on the
+          intersection of design and development. */}
+          Currently interested in working small, emerging startups to help launch their product. I
+          have had the pleasure to work with various companies from small, emerging startups to
+          larger, multi-million dollar companies.
         </Paragraph>
       </Box>
       <Row>
