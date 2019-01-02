@@ -503,6 +503,23 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/components
       lineNumber: 48
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=UA-131526649-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n\n        gtag('config', 'UA-131526649-1');\n      "
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
   }));
 });
 
@@ -525,44 +542,115 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Variables__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Variables */ "./components/Variables.js");
 var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/components/ImageWithBackground.js";
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
+
+
+
+var lastId = 0;
+
+var genUniqueId = function genUniqueId() {
+  var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'id';
+  lastId++;
+  return "".concat(prefix).concat(lastId);
+};
 
 var StyledImageWithBackground = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ImageWithBackground__StyledImageWithBackground",
   componentId: "sc-1h1soe3-0"
-})(["background-color:#f8f9fa;padding:40px;img{border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.05);width:100%;}p{color:", ";font-size:16px;margin-top:16px;text-align:center;}"], _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].gray);
+})(["background-color:#f8f9fa;padding:40px;img{border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.05);width:100%;transition:transform 0.25s ease;cursor:zoom-in;}p{color:", ";font-size:16px;margin-top:16px;text-align:center;}input[type=checkbox]{display:none;}input[type=checkbox]:checked ~ label > img{transform:scale(2);cursor:zoom-out;}"], _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].gray);
 
-var ImageWithBackground = function ImageWithBackground(_ref) {
-  var imageUrl = _ref.imageUrl,
-      description = _ref.description;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImageWithBackground, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: imageUrl,
-    alt: "img with background",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, description));
-};
+var ImageWithBackground =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ImageWithBackground, _Component);
 
-ImageWithBackground.propTypes = {
+  function ImageWithBackground() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, ImageWithBackground);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ImageWithBackground)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentWillMount", function () {
+      _this.uniqueId = genUniqueId();
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
+      var _this$props = _this.props,
+          imageUrl = _this$props.imageUrl,
+          description = _this$props.description;
+      console.log(_this.uniqueId);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledImageWithBackground, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox",
+        id: _this.uniqueId,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: _this.uniqueId,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: imageUrl,
+        alt: "img with background",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, description));
+    });
+
+    return _this;
+  }
+
+  return ImageWithBackground;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+_defineProperty(ImageWithBackground, "propTypes", {
   imageUrl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired,
   description: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
-};
+});
+
 /* harmony default export */ __webpack_exports__["default"] = (ImageWithBackground);
 
 /***/ }),
@@ -582,7 +670,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Variables__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Variables */ "./components/Variables.js");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! . */ "./components/index.js");
 var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/components/MoreInfo.js";
+
 
 
 
@@ -590,7 +680,7 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/components
 var StyledMoreInfo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "MoreInfo__StyledMoreInfo",
   componentId: "sc-17wfuyc-0"
-})(["background-color:", ";padding:40px;text-align:center;h3{color:", ";font-size:24px;letter-spacing:-.5px;margin-bottom:8px;}p{color:", ";font-size:16px;line-height:24px;}a{color:", ";font-size:16px;text-decoration:none;&:hover{opacity:.7;}}"], _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].snow, _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].black, _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].darkGray, _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].darkGray);
+})(["background-color:", ";padding:40px;text-align:center;h3{color:", ";font-size:24px;letter-spacing:-.5px;margin-bottom:8px;}p{color:", ";font-size:16px;line-height:24px;}"], _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].snow, _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].black, _Variables__WEBPACK_IMPORTED_MODULE_3__["colors"].darkGray);
 
 var MoreInfo = function MoreInfo(_ref) {
   var title = _ref.title,
@@ -598,32 +688,32 @@ var MoreInfo = function MoreInfo(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledMoreInfo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 26
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 27
     },
     __self: this
   }, description, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(___WEBPACK_IMPORTED_MODULE_4__["StyledLink"], {
     href: "mailto:henry@kaufman.io",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 30
     },
     __self: this
   }, "Email me!")));
@@ -16514,21 +16604,29 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
       lineNumber: 28
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/home/cmo.svg",
-    style: {
-      width: '100%'
-    },
-    alt: "cmo img",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/work/compare-my-offers",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/home/cmo.svg",
+    style: {
+      width: '100%',
+      cursor: 'pointer'
+    },
+    alt: "cmo img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
     },
     __self: this
   }, "Compare My Offers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -16536,64 +16634,72 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, "A simple online tool to help home buyers understand and compare various mortgage rates.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work/compare-my-offers",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 41
     },
     __self: this
   }, "View the case study")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/work/duworks",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/home/duworks.svg",
     style: {
-      width: '100%'
+      width: '100%',
+      cursor: 'pointer'
     },
     alt: "duworks",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 52
     },
     __self: this
   }, "DUWorks"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -16601,64 +16707,72 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 54
     },
     __self: this
   }, "An online platform connecting University of Denver students with local companies for freelancing opportunities.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work/duworks",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 60
     },
     __self: this
   }, "View the case study")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 66
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/work/du-innovation-map",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/home/du-innovation-map.svg",
     style: {
-      width: '100%'
+      width: '100%',
+      cursor: 'pointer'
     },
     alt: "nexleader ipsat img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 68
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 71
     },
     __self: this
   }, "DU Innovation Map"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -16666,64 +16780,72 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 72
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 73
     },
     __self: this
   }, "A map showcasing the innovative and entrepreneurial resources at the University of Denver.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work/du-innovation-map",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 79
     },
     __self: this
   }, "View the case study")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 83
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 84
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 85
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/work/blink",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/home/blink.svg",
     style: {
-      width: '100%'
+      width: '100%',
+      cursor: 'pointer'
     },
     alt: "blink img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 87
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 90
     },
     __self: this
   }, "Blink Mortgage"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -16731,64 +16853,72 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 91
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 92
     },
     __self: this
   }, "A 21st century Canadian mortgage company dedicated to providing fast, simple mortgages.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work/blink",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 97
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 98
     },
     __self: this
   }, "View the case study")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 102
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 103
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 104
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/work/ipsat",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/home/ipsat.svg",
     style: {
-      width: '100%'
+      width: '100%',
+      cursor: 'pointer'
     },
     alt: "nexleader ipsat img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 106
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Heading2"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 109
     },
     __self: this
   }, "nexleader IPSAT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -16796,33 +16926,33 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     mb: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 110
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 111
     },
     __self: this
   }, "A user management tool that helps people understand and utilize their passions.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/work/ipsat",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 115
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 116
     },
     __self: this
   }, "View the case study")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 120
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["MoreInfo"], {
@@ -16830,13 +16960,13 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
     description: "Let's find a time to meet!",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 121
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Bottom"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 127
     },
     __self: this
   })));
@@ -16863,7 +16993,7 @@ var _jsxFileName = "/Users/henrykaufman/Documents/Projects/kaufman.io/pages/inde
 
 /***/ }),
 
-/***/ 8:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -16888,5 +17018,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
