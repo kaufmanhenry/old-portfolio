@@ -12,7 +12,8 @@ import {
   Label,
   ImageWithBackground,
   Footer,
-  Bottom
+  Bottom,
+  StyledLink
 } from '../../components';
 
 export default () => (
@@ -36,6 +37,9 @@ export default () => (
       <Container>
         <Row>
           <Col sm={4}>
+            <Label>Client</Label>
+            <Paragraph>Blink Lending</Paragraph>
+            <br />
             <Label>Period</Label>
             <Paragraph>2016-2017</Paragraph>
             <br />
@@ -44,6 +48,11 @@ export default () => (
               UI/UX Design
               <br />
               Full Stack Development
+            </Paragraph>
+            <br />
+            <Label>Worked With</Label>
+            <Paragraph>
+              <StyledLink href="http://jakebillings.com" target="_blank">Jake Billings</StyledLink>
             </Paragraph>
           </Col>
           <Col sm={8}>

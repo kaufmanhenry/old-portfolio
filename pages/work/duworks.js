@@ -38,6 +38,9 @@ export default () => (
       <Container>
         <Row>
           <Col sm={4}>
+            <Label>Client</Label>
+            <Paragraph>University of Denver</Paragraph>
+            <br />
             <Label>Period</Label>
             <Paragraph>2018</Paragraph>
             <br />

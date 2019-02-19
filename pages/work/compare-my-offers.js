@@ -37,6 +37,9 @@ export default () => (
       <Container>
         <Row>
           <Col sm={4}>
+            <Label>Client</Label>
+            <Paragraph>Blink Lending</Paragraph>
+            <br />
             <Label>Period</Label>
             <Paragraph>Summer 2018</Paragraph>
             <br />
@@ -45,6 +48,11 @@ export default () => (
               UI/UX Design
               <br />
               Full Stack Development
+            </Paragraph>
+            <br />
+            <Label>Worked With</Label>
+            <Paragraph>
+              <StyledLink href="http://jakebillings.com" target="_blank">Jake Billings</StyledLink>
             </Paragraph>
             <br />
             <Label>Site</Label>
